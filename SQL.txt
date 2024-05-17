@@ -1,0 +1,29 @@
+                             SQL
+Beginner...........
+ 
+Girrafe academy.com
+
+
+Database
+  secured
+  easy to backup
+  Interacts with software applications  (programming lang)
+  Importing/exporting data
+  Easy to manage large data
+
+          C  R   U   D (4 main operations of database) + admin tasks( user management, security, backup)
+
+TYPES OF DATABASES:
+
+RDMS (SQL)                              |   Non-RDMS (noSQL)                                       |
+* Organize data into 1 or more tables   | *Oraganize data is anything but not traditional table
+    # Each table - columns & rows       |      # Key value stores
+    # A unique key identifies each row  |      # Docs like JSON, XML etc
+        Example: Excel spreadsheet      |         # Graphs, Flexible tables
+                                        |
+* mySQL, Oracle, postgreSQL, mariaDB etc|  * mongoDB, dynamoDB, apache cassandra, firebase, etc 
+
+ SQL - To define tables and structures
+   Disadv... SQL used on one RDMS can't be portable without modification
+noSQL - Implement their iwn lang for performing CRUD & admin operations on database
+ 
