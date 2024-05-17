@@ -1,0 +1,24 @@
+Structured Query Language (SQL)
+     It is a hybrid languuage
+
+  |---> Used for interacting with RDBMS
+         * Create, retrieve, update& delete data
+         * Create & manage DB'S
+         * Design & Create DB tables
+         * Perform admin tasks
+  |---> SQL implementation vary b/w systems
+
+4 types of SQL: 
+   @ Data Query Language (DQL) - Query DB for info that is already stored
+   @ Data Definition Language (DDL) - defines DB schemas
+   @ Data Control Language (DCL) - Control access to DB , user & permission management
+   @ Data Manipulation Language (DML) - For inserting, updating & deleting data from DB
+
+17:09 17-05-2024
+
+Queries: Set of INSTRUCTIONS given to RDBMS for retrieving necessary data
+
+   Ex: SELECT  employee.name, employee.age
+       FROM    employee (employee is table name)
+       WHERE   employee.salary > 3000 (specific condition)
+  
