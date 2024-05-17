@@ -1,0 +1,46 @@
+                             SQL
+Beginner...........
+ 
+Girrafe academy.com
+
+
+Database
+  secured
+  easy to backup
+  Interacts with software applications  (programming lang)
+  Importing/exporting data
+  Easy to manage large data
+
+          C  R   U   D (4 main operations of database) + admin tasks( user management, security, backup)
+
+TYPES OF DATABASES:
+
+RDMS (SQL)                              |   Non-RDMS (noSQL)                                       |
+* Organize data into 1 or more tables   | *Oraganize data is anything but not traditional table
+    # Each table - columns & rows       |      # Key value stores
+    # A unique key identifies each row  |      # Docs like JSON, XML etc
+        Example: Excel spreadsheet      |         # Graphs, Flexible tables
+                                        |
+* mySQL, Oracle, postgreSQL, mariaDB etc|  * mongoDB, dynamoDB, apache cassandra, firebase, etc 
+
+ SQL - To define tables and structures
+   Disadv... SQL used on one RDMS can't be portable without modification
+noSQL - Implement their iwn lang for performing CRUD & admin operations on database
+ 
+
+
+Database Queries - Ex: Google search
+
+  - Requests made to DBMS for specific info
+  - DB structure complex ∝ Difficulty level of getting info
+
+Primary key/Natural key - Has mapping to real word like Aadhar or Security number     
+
+Surrogate key - Has no mapping to real world (just random numbers or names)
+              * Can also be used as primary key
+
+Foreign key   - used to link one DB table to other
+               * stores primary key of a row in another DB table
+               * This will actually acts as primary key inside other table (Branch table)
+
+ Composite key - It has 2 or more foreign keys
