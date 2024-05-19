@@ -1,0 +1,50 @@
+                      Updating rows from database
+Other comparision ops: 
+                        equals                    =
+                        not equals                <>
+                        greater than              >
+                        less than                  <
+                        greater than equals to    >=
+                        less than equals to       <=
+
+CREATE TABLE info (
+    student_id INT  AUTO_INCREMENT,   
+    name VARCHAR(20) NOT NULL,                
+    major VARCHAR(20) UNIQUE,
+    PRIMARY KEY(student_id)
+);
+SELECT * FROM info;
+
+UPDATE info
+SET major = 'Bio'
+WHERE major = 'Biology';
+
+INSERT INTO info VALUES('Mokshi', 'History');          #1 is student_id followed by name and major
+INSERT INTO info VALUES('Renu', 'Biology');   # When we don't know value to be insterted for particular column attribute
+INSERT INTO info VALUES('Yashu', 'History');
+INSERT INTO info VALUES('Priya', 'Chemistry');  
+
+
+        Conditional updating - AND, OR                 To update every single row
+                                                                    just don't use WHERE                             
+
+UPDATE info
+SET major = 'Science'
+WHERE major = 'Biology' or major= 'Chemistry' ;
+
+UPDATE info
+SET name = 'Mokshith Krishna', major = 'Biology'
+WHERE student_id=1;
+
+UPDATE info                                          #To update every single roW just don't use WHERE
+SET major = 'Science'
+
+
+          
+
+
+
+
+
+     
+  
