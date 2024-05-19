@@ -1,0 +1,24 @@
+CREATE TABLE info (
+    student_id INT PRIMARY KEY,   #This is going to be primary key for table
+    name VARCHAR(20),                #Length of variable character depending on domain
+    major VARCHAR(20)
+);
+DESCRIBE info;            #To describe table
+
+  Or
+
+CREATE TABLE info (
+    student_id INT,   #This is going to be primary key for table
+    name VARCHAR(20),                #Length of variable character depending on domain
+    major VARCHAR(20),
+    PRIMARY KEY(student_id)
+);
+
+INSERT INTO student VALUES(1, 'Mokshi', 'Sports'
+
+        ------------------------------
+        |student_id 
+        |
+        |
+        |
+        |
