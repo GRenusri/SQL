@@ -1,7 +1,7 @@
 CREATE TABLE info (
     student_id INT PRIMARY KEY,   #This is going to be primary key for table
-    name VARCHAR(20),                #Length of variable character depending on domain
-    major VARCHAR(20)
+    name VARCHAR(20),                #Length of variable character (or) key depending on domain
+    major VARCHAR(20)             #major, name are called as keys
 );
 DESCRIBE info;            #To describe table
 
@@ -13,10 +13,18 @@ CREATE TABLE info (
     major VARCHAR(20),
     PRIMARY KEY(student_id)
 );
+SELECT
 
-INSERT INTO student VALUES(1, 'Mokshi', 'Sports'
+INSERT INTO student VALUES(1, 'Mokshi', 'Sports');          #1 is student_id followed by name and major
+INSERT INTO student(student_id, name) VALUES(2, 'Renu');   # When we don't know value to be insterted for particular column attribute
+INSERT INTO student(name, major) VALUES('Yashu', 'Gaming');
+INSERT INTO student VALUES(4, 'Priya', 'Fun');  
 
-        ------------------------------
+
+
+
+     
+   ------------------------------
         |student_id 
         |
         |
