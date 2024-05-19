@@ -1,0 +1,20 @@
+            Constraints used - Auto increment, Not null & Unique
+
+CREATE TABLE info (
+    student_id INT  AUTO_INCREMENT,   
+    name VARCHAR(20) NOT NULL,                
+    major VARCHAR(20) UNIQUE,
+    PRIMARY KEY(student_id)
+);
+SELECT * FROM student;
+
+INSERT INTO student VALUES('Mokshi', 'Sports');          #1 is student_id followed by name and major
+INSERT INTO student(student_id, name) VALUES('Renu');   # When we don't know value to be insterted for particular column attribute
+INSERT INTO student(name, major) VALUES('Yashu', 'Gaming');
+INSERT INTO student VALUES('Priya', 'Fun');  
+
+
+
+
+     
+  
