@@ -1,0 +1,41 @@
+                      Deleting rows from database
+
+
+CREATE TABLE info (
+    student_id INT  AUTO_INCREMENT,   
+    name VARCHAR(20) NOT NULL,                
+    major VARCHAR(20) UNIQUE,
+    PRIMARY KEY(student_id)
+);
+SELECT * FROM info;
+
+DELETE FROM info                          #Deleting commands
+WHERE major = 'Biology';
+
+INSERT INTO info VALUES('Mokshi', 'History');          
+INSERT INTO info VALUES('Renu', 'Biology');   
+INSERT INTO info VALUES('Yashu', 'History');
+INSERT INTO info VALUES('Priya', 'Chemistry');  
+
+
+        Conditional deleting - AND                 To delete every single row
+                                                                    just don't use WHERE                             
+
+DELETE FROM info
+WHERE major = 'Biology' AND major= 'Chemistry' ;
+
+DELETE FROM info
+WHERE student_id=1;
+
+DELETE FROM info;                                        #To update every single roW just don't use WHERE
+
+
+
+          
+
+
+
+
+
+     
+  
